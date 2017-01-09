@@ -61,8 +61,6 @@ ReadObservationsFile <- function () {
                          colClasses = c("character", "character", "numeric",
                                         "numeric", "numeric", "numeric", 
                                         "numeric"))
-  fileData$Date <- as.Date(x = fileData$Date, format = "%d/%m/%Y")
-  #airquality <- transform(airquality, Month = factor(Month)) 
   return(fileData)
 }
 
